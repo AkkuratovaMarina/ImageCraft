@@ -25,7 +25,7 @@ all: $(TARGET)
 $(TARGET): $(OBJECTS)
 	$(CC) $(OBJECTS) -o $@
 
-# Компиляция .c → .o
+# Компиляция .c в .o
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
